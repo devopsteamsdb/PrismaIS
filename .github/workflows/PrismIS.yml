@@ -39,6 +39,6 @@ jobs:
     - name: run twistcli intelligence download
       run: ./linux/twistcli intelligence download --token ${{ secrets.TWISTCLI_TOKEN }}
 
-    - name: get files in a folder
-      run: cd linux; ls -lah
+    - name: get files in a folder after download intelligence
+      run: ls -lah
     
