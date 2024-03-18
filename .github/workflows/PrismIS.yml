@@ -30,5 +30,8 @@ jobs:
     - name: download prisma_cloud_compute_edition
       run: wget https://cdn.twistlock.com/releases/F1hMvev9/prisma_cloud_compute_edition_31_01_123.tar.gz
 
-    - name: show files in folder
-      run: ls -lah
+    - name: extract prisma_cloud_compute_edition
+      run: tar -xvzf prisma_cloud_compute_edition_31_01_123.tar.gz
+
+    - name: get files in a folder
+      run: ls -lah 
