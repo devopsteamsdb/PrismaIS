@@ -6,6 +6,8 @@ on:
     branches: [ main ]
     paths-ignore:
       - 'README.md'
+  tags:
+    - '*'      
 
   pull_request:
     branches: [ main ]
@@ -47,5 +49,6 @@ jobs:
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "twistlock_feed*.tar.gz"
+        tag: ${{ github.run_number }}
         body: |
           twistcli feed download date: ${{ steps.date.outputs.date }}
