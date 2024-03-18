@@ -36,6 +36,6 @@ jobs:
     - name: get files in a folder
       run: cd linux; ls -lah
 
-    - name: get files in a folder
-      run: ls -lah; twistcli intelligence download --token cwr7
+    - name: run twistcli intelligence download
+      run: ./linux/twistcli intelligence download --token cwr7
     
