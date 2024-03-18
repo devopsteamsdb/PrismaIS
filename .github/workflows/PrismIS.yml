@@ -37,5 +37,8 @@ jobs:
       run: cd linux; ls -lah
 
     - name: run twistcli intelligence download
-      run: ./linux/twistcli intelligence download --token cwr7
+      run: ./linux/twistcli intelligence download --token ${{ secrets.TWISTCLI_TOKEN }}
+
+    - name: get files in a folder
+      run: cd linux; ls -lah
     
