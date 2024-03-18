@@ -34,4 +34,7 @@ jobs:
       run: tar -xvzf prisma_cloud_compute_edition_31_01_123.tar.gz
 
     - name: get files in a folder
-      run: ls -lah 
+      run: ls -lah
+    
+    - name: run twistcli intelligence download
+      run: linux\twistcli intelligence download --token cwr
