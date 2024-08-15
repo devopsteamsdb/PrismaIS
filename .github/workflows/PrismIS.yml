@@ -30,10 +30,10 @@ jobs:
       run: echo "::set-output name=date::$(date +'%Y_%m_%d_%H_%M')"
     
     - name: download prisma_cloud_compute_edition
-      run: wget https://cdn.twistlock.com/releases/F1hMvev9/prisma_cloud_compute_edition_31_01_123.tar.gz
+      run: wget https://cdn.twistlock.com/releases/TrSbEoFi/prisma_cloud_compute_edition_32_06_113.tar.gz
 
     - name: extract prisma_cloud_compute_edition
-      run: tar -xvzf prisma_cloud_compute_edition_31_01_123.tar.gz
+      run: tar -xvzf prisma_cloud_compute_edition_32_06_113.tar.gz
 
     - name: get files in a folder
       run: cd linux; ls -lah
